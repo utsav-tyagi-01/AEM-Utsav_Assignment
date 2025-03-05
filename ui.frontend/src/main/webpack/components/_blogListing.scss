@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+}
+.wrapper-2{
+  max-width: 90rem;
+  background-color: 	#e0e0e0;
+}
+.explore-blogs{
+  padding: 1.875rem 6.5rem;
+  .title{
+    font-size: 3.4rem;
+  }
+
+  .subtitle{
+    font-size: 1.4rem;
+  }
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+  
+    #search-bar {
+      width: 90%;
+      max-width: 67rem;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s ease-in-out;
+  
+      &:focus {
+        border-color: #007bff;
+      }
+    }
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  
+    .card {
+      width: 320px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      position: relative;
+      background: #fff;
+      font-family: Arial, sans-serif;
+    
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      .card-image {
+        position: relative;
+        width: 90%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 10px;
+
+        .category {
+          background: black;
+          color: white;
+          font-size: 14px;
+          padding: 5px 10px;
+          border-radius: 5px;
+        }
+  
+        .icon {
+          width: 80px;
+          height: 35px;
+          // background: white;
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          justify-content: center;
+          padding: 5px;
+          cursor: pointer;
+        }
+        .download {
+          
+          width: 35px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          
+          border-radius: 50%;
+          cursor: pointer;
+         
+        }
+
+        svg{
+          width: 20px;
+          height: 20px;
+        }
+      
+        .share{
+          width: 35px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          cursor: pointer;
+          border-radius: 50%;
+          
+        }
+      }
+  
+      .card-content {
+        padding: 15px;
+       
+  
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+  
+        .description {
+          font-size: 14px;
+          color: #555;
+          margin-bottom: 8px;
+        }
+  
+        .price-rating {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 5px;
+  
+          .price {
+            color: #e44d26;
+          }
+  
+          .rating {
+            color: #ff9800;
+          }
+        }
+  
+        .stock {
+          font-size: 14px;
+          color: #008000;
+          margin-bottom: 10px;
+        }
+  
+        .cta {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          font-weight: bold;
+          color: black;
+          cursor: pointer;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+  
+          &::after {
+            content: " →";
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  
+  .btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #161515;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  
+    &:hover {
+      background-color: white;
+      color: #161515;
+    }
+  }
+
+ 

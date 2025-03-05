@@ -1,0 +1,23 @@
+ <sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.hasContent="${properties.title || properties.subtitle}"/>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent}"/>
+
+<div class="wrapper">
+  <div class="wrapper-2">
+    <div class="explore-blogs">
+      <h1 class="title">${properties.title}</h1>
+      <p class="subtitle">${properties.subtitle}</p>
+    
+     
+    </div>
+    
+    <div class="search-container">
+      <input type="search" id="search-bar" placeholder="Search Product">
+    </div>
+    <div class="container">
+      <div class="card-container"></div>
+      <button class="btn">Load More</button>
+     
+    </div>
+  </div>
+</div>
